@@ -9,7 +9,7 @@
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-11_to_18-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![PHP](https://img.shields.io/badge/PHP-8.1--8.4-777BB4?logo=php&logoColor=white)](https://www.php.net/)
-[![Tests](https://img.shields.io/badge/tests-17_passing-brightgreen)](sql/)
+[![Tests](https://img.shields.io/badge/tests-26_passing-brightgreen)](sql/)
 [![License](https://img.shields.io/badge/license-permissive-blue)](#license)
 
 <br>
@@ -106,6 +106,14 @@ $$;
   On Debian/Ubuntu, install `php8.x-dev` and `libphp8.x-embed`.
 
 ## Installation
+
+From [PGXN](https://pgxn.org/dist/plphp/):
+
+```sh
+pgxn install plphp
+```
+
+From a source checkout:
 
 ```sh
 make

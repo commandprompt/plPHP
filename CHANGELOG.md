@@ -5,6 +5,21 @@ All notable changes to PL/php are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and the project aims to follow [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- **PGXN packaging.** A `META.json` conforming to version 1.0.0 of the PGXN
+  distribution metadata spec, so PL/php can be released on
+  [PGXN](https://pgxn.org/) and installed with `pgxn install plphp`. It lists
+  the four extensions in the distribution (`plphp` plus the `jsonb_plphp`,
+  `hstore_plphp`, and `bytea_plphp` transforms).
+
+### Fixed
+
+- Documentation: the README test-count badge and the INSTALL note on the
+  optional transforms, which still described a single jsonb transform.
+
 ## [2.6.0] - 2026-07-06
 
 ### Added

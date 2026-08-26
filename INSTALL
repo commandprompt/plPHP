@@ -32,6 +32,12 @@ and links against the PHP "embed" SAPI.
 2. Build and install
 ---------------------
 
+From PGXN, which downloads, builds, and installs the current release:
+
+    pgxn install plphp
+
+From a source checkout:
+
     make
     sudo make install
 
@@ -50,8 +56,8 @@ point that symlink at the intended version.
 This installs the shared library plphp.so plus the extension control and SQL
 files into the directories reported by pg_config.
 
-The optional jsonb transform (CREATE EXTENSION jsonb_plphp; see
-doc/plphp.md) builds the same way in its own directory:
+The optional transforms (jsonb_plphp, hstore_plphp, bytea_plphp; see
+doc/plphp.md) build the same way, each in its own directory:
 
     make -C jsonb_plphp PG_CONFIG=... PHP_CONFIG=...
     sudo make -C jsonb_plphp PG_CONFIG=... install

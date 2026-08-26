@@ -1,0 +1,64 @@
+{
+   "name": "plphp",
+   "abstract": "PHP as a procedural language for PostgreSQL",
+   "description": "PL/php lets you write PostgreSQL functions, set-returning functions, triggers, event triggers, and procedures in PHP, stored and executed inside the server. It supports SPI queries and cursors, subtransactions, transaction control in procedures, structured errors, per-function and session-shared state, and optional transforms that map PostgreSQL jsonb, hstore, and bytea values to native PHP values. PL/php is an untrusted language: PHP has no sandbox on modern releases, so functions run with the privileges of the server's operating system user and only a superuser may install the extension.",
+   "version": "2.6.0",
+   "maintainer": [
+      "Joshua D. Drake <jd@commandprompt.com>"
+   ],
+   "license": "postgresql",
+   "release_status": "stable",
+   "prereqs": {
+      "runtime": {
+         "requires": {
+            "PostgreSQL": "11.0.0"
+         }
+      }
+   },
+   "provides": {
+      "plphp": {
+         "file": "plphp--2.6.sql",
+         "docfile": "doc/plphp.md",
+         "version": "2.6.0",
+         "abstract": "PHP as a procedural language for PostgreSQL"
+      },
+      "jsonb_plphp": {
+         "file": "jsonb_plphp/jsonb_plphp--1.0.sql",
+         "version": "1.0.0",
+         "abstract": "Transform between jsonb and PL/php values"
+      },
+      "hstore_plphp": {
+         "file": "hstore_plphp/hstore_plphp--1.0.sql",
+         "version": "1.0.0",
+         "abstract": "Transform between hstore and PL/php arrays"
+      },
+      "bytea_plphp": {
+         "file": "bytea_plphp/bytea_plphp--1.0.sql",
+         "version": "1.0.0",
+         "abstract": "Transform between bytea and binary-safe PL/php strings"
+      }
+   },
+   "resources": {
+      "homepage": "https://github.com/commandprompt/plPHP",
+      "bugtracker": {
+         "web": "https://github.com/commandprompt/plPHP/issues"
+      },
+      "repository": {
+         "url": "https://github.com/commandprompt/plPHP.git",
+         "web": "https://github.com/commandprompt/plPHP",
+         "type": "git"
+      }
+   },
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "https://pgxn.org/meta/spec.txt"
+   },
+   "tags": [
+      "php",
+      "procedural language",
+      "plphp",
+      "language handler",
+      "untrusted",
+      "transform"
+   ]
+}
