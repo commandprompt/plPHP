@@ -39,13 +39,13 @@
       }
    },
    "resources": {
-      "homepage": "https://github.com/commandprompt/PL-php",
+      "homepage": "https://github.com/commandprompt/plPHP",
       "bugtracker": {
-         "web": "https://github.com/commandprompt/PL-php/issues"
+         "web": "https://github.com/commandprompt/plPHP/issues"
       },
       "repository": {
-         "url": "https://github.com/commandprompt/PL-php.git",
-         "web": "https://github.com/commandprompt/PL-php",
+         "url": "https://github.com/commandprompt/plPHP.git",
+         "web": "https://github.com/commandprompt/plPHP",
          "type": "git"
       }
    },
