@@ -89,7 +89,7 @@ jobs:
         run: |
           port=$(pg_lsclusters | awk '$1 == "${{ matrix.pg }}" && $2 == "main" { print $3 }')
           # let the postgres user reach and write the workspace
-          sudo chmod a+x /home/runner /home/runner/work /home/runner/work/PL-php
+          sudo chmod a+x /home/runner /home/runner/work "$(dirname "$GITHUB_WORKSPACE")"
           chmod -R a+rwX .
           sudo -u postgres env PGPORT=$port \
             make PG_CONFIG=/usr/lib/postgresql/${{ matrix.pg }}/bin/pg_config installcheck
@@ -178,7 +178,7 @@ jobs:
       - name: Run the regression tests under ASAN
         run: |
           port=$(pg_lsclusters | awk '$1 == 18 && $2 == "main" { print $3 }')
-          sudo chmod a+x /home/runner /home/runner/work /home/runner/work/PL-php
+          sudo chmod a+x /home/runner /home/runner/work "$(dirname "$GITHUB_WORKSPACE")"
           chmod -R a+rwX .
           # the cookbook test needs SimpleXML, unavailable with extensions off
           tests=$(grep '^REGRESS' Makefile | sed 's/REGRESS = //; s/ cookbook//')
