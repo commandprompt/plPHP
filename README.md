@@ -9,6 +9,7 @@
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-11_to_18-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![PHP](https://img.shields.io/badge/PHP-8.1--8.4-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+[![PGXN](https://img.shields.io/badge/PGXN-plphp-B65C1E)](https://pgxn.org/dist/plphp/)
 [![Tests](https://img.shields.io/badge/tests-26_passing-brightgreen)](sql/)
 [![License](https://img.shields.io/badge/license-permissive-blue)](#license)
 
