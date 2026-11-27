@@ -6,6 +6,7 @@
 
 #include "executor/spi.h"
 #include "funcapi.h"
+#include "utils/tuplestore.h"
 
 /*
  * These are defined again in php.h, so undef them to avoid some
